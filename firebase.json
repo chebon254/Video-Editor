@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "Video Editor",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
