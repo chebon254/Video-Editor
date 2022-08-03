@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+
+    <!-- == Favicon == -->
+    <link rel="shortcut icon" href="Assets/media/image/logo.png" sizes="98x98">
+    <link rel="shortcut icon" href="Assets/media/image/logo.png" sizes="128x128">
+
+    <!-- == Style == -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- == Font == -->
+    <link rel="stylesheet" href="Assets/css/fonts.css">
+
+    <!-- == Icons == -->
+    <link rel="stylesheet" href="Assets/css/fontawesome/css/all.css">
+
+</head>
+<body>
+	<nav>
+        <div class="logo">
+            <a href="index.html">Video Editor</a>
+        </div>
+        <div class="links">
+            <a href="record.html" class="thumbnail">Present</a>
+            <a href="thumbnail.html" class="thumbnail">Thumbnail</a>
+            <a href="recorder.html" class="recorder"><i class="fas fa-plus"></i> Create New</a>
+        </div>
+    </nav>
+    <main class="record-main">
+		<div  class="video-content">
+			<h1>Input Video</h1>
+			<video class="recording" poster="Assets/media/image/poster.png" ></video>
+		</div>
+		<div class="video-content video-output">
+			<h1>Output Video</h1>
+			<video class="output" controls poster="Assets/media/image/poster.png"></video>
+			<div class="video-content-btns">
+				<button class="start-btn"><i class="fas fa-play"></i> Start Recording</button>
+				<button class="stop-btn"><i class="fas fa-pause"></i> Stop Recording</button>
+			</div>
+			<div class="video-name">
+				<h1>Enter Name of Video</h1>
+				<input type="text" placeholder="Enter Name..." id="videoName">
+				<button type="button" onclick="getInputValue();">Video Name</button>
+			</div>
+			<a href="#" class="download-anc"><i class="fas fa-download"></i> Download</a>
+		</div>
+	</main>
+	<footer>
+        <p>Copyright | Video Editor 2020</p>
+    </footer>
+    
+    <!-- == Scripts == -->
+    <script src="Assets/js/scripts.js"></script>
+
+</body>
+</html>

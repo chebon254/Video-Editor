@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Editor</title>
+
+    <!-- == Favicon == -->
+    <link rel="shortcut icon" href="Assets/media/image/logo.png" sizes="98x98">
+    <link rel="shortcut icon" href="Assets/media/image/logo.png" sizes="128x128">
+
+    <!-- == Style == -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <!-- == Font == -->
+    <link rel="stylesheet" href="Assets/css/fonts.css">
+
+    <!-- == Icons == -->
+    <link rel="stylesheet" href="Assets/css/fontawesome/css/all.css">
+
+
+</head>
+<body>
+	<nav>
+        <div class="logo">
+            <a href="index.html">Video Editor</a>
+        </div>
+        <div class="links">
+            <a href="record.html" class="thumbnail">Present</a>
+            <a href="thumbnail.html" class="thumbnail">Thumbnail</a>
+            <a href="recorder.html" class="recorder"><i class="fas fa-plus"></i> Create New</a>
+        </div>
+    </nav>
+    <div style="float: left">
+		<video class="recording" autoplay muted width="500px"
+			height="500px"></video>
+	</div>
+	<div>
+		<h1>OUTPUT</h1>
+		<video class="output" autoplay controls width="500px"
+			height="500px"></video>
+
+		<button class="start-btn">Start Recording</button>
+		<button class="stop-btn">Stop Recording</button>
+		<a href="#" download="output.mp4"
+		class="download-anc">Download</a>
+	</div>
+
+    <!-- == Scripts == -->
+    <script src="Assets/js/scripts.js"></script>
+</body>
+</html>
